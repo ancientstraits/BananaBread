@@ -15,7 +15,7 @@ jobs:
           cd emsdk
           ./emsdk install latest
           ./emsdk activate latest
-          ./emsdk_env.sh
+          source emsdk_env.sh
           cd ../cube2/src/web
           emmake make client
           
