@@ -12,6 +12,9 @@ jobs:
           cd cube2/src/web
           apt install emscripten
           emmake make client
+          
+      - name: emscripten
+        uses: lovasoa/setup-emscripten@master
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
